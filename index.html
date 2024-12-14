@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+        <div class="container">
+          <div class="nav-first-part d-flex">
+            <a class="navbar-brand" href="#"><img src="./images/logo@2x.png" width="70px" alt="logo"></a>
+            <div class="naaav">
+              <h4 class="mb-0">Company name</h4>
+              <p>tagline goes here</p>
+            </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./contact.html"> Contact</a>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <section class="mainSection pb-5">
+        <div class="container">
+        <div class="input-group py-5">
+            <input type="text" id="searchInput" class="form-control searchInp py-3 rounded-5 position-relative" placeholder="Find your location..." aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn rounded-5 position-absolute end-0 me-2 top-50 translate-middle-y px-5 py-2" type="button" id="button-addon2">Find</button>
+          </div>
+          <div class="card-group">
+            <div class="card first-card">
+                <div class="card-header d-flex justify-content-between">
+                    <div id="todaycardday"></div>
+                    <div class="today-card-date"><span id="todayNumber"> </span><span id="todayMonth"></span></div>
+                </div>
+              <div class="card-body">
+                <p class="card-government" id="todayCountry"></p>
+                <h2 class="card-today-degree"><span id="todayTemp"></span>&deg;C</h2>
+                <img src="" alt="weatherImage" id="todayImg" width="100px">
+                <p class="card-text cardStatus" id="todayText"></p>
+                <div class="threeIcons d-flex">
+                <p class="card-text cardTextIcon"><img src="./images/icon-umberella.png" class="me-1" alt="umberella"><span id="todayRain"></span></p>
+                <p class="card-text cardTextIcon mx-4"><img src="./images/icon-wind.png" class="me-1" alt="wind"><span id="todayWind"></span></p>
+                <p class="card-text cardTextIcon"><img src="./images/icon-compass.png" class="me-1" alt="compass"><span id="todayCompass"></span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card text-center second-card">
+            <div class="card-header">
+                <p class="my-0" id="tomorrowName"></p>
+            </div>
+              <div class="card-body">
+                <img src="" alt="tomorrow image" id="tomorrowImg" class="my-4">
+                <h3 class="tomorrowMax"><span id="tomorrowMaxTemp"></span>&deg;C</h3>
+                <p class="tomorrowMin mb-4"><span id="tomorrowMinTemp"></span>&deg;C</p>
+                <p id="tomorrowText" class="tomorrowStatus"></p>
+              </div>
+            </div>
+
+            <div class="card text-center third-card">
+                <div class="card-header">
+                    <p class="my-0" id="aftertomorrowName"></p>
+                </div>
+                  <div class="card-body">
+                    <img src="" alt="after tomorrow image" id="aftertomorrowImg" class="my-4">
+                    <h3 class="afterTomorrowMax"><span id="aftertomorrowMaxTemp"></span>&deg;C</h3>
+                    <p class="afterTomorrowMin mb-4"><span id="aftertomorrowMinTemp"></span>&deg;C</p>
+                    <p id="aftertomorrowText" class="afterTomorrowStatus"></p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </section>
+      <footer class="m-0">
+        <div class="footerContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="footerInput">
+                        <div class="input-group py-5">
+                            <input type="text" id="searchInput" class="form-control searchInp py-3 rounded-5 position-relative" placeholder="Enter your email to subscribe..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn rounded-5 position-absolute end-0 me-2 top-50 translate-middle-y px-5 py-2" type="button" id="button-addon2">Subscribe</button>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footerLinks my-5 py-2 d-flex justify-content-center">
+                        <div class="footer-link me-3">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="footer-link me-3">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="footer-link me-3">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </div>
+                        <div class="footer-link me-3">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center my-0 pb-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </div>
+      </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
